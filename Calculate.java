@@ -1,93 +1,88 @@
 public class Calculate {
-    public static void main(String[] args) {
 
-        double first = Double.valueOf(args[0]);
-        double second = Double.valueOf(args[1]);
 
-        sum(first, second);
-        subtract(first, second);
-        multi(first, second);
-        division(first, second);
+    public void getResult (String firstArg, String secondArg, String operation){
+        double first = Double.valueOf(firstArg);
+        double second = Double.valueOf(secondArg);
+        switch (operation){
+            case "+" :
+                System.out.println(sum(first, second));
+                break;
+            case "-" :
+                System.out.println(subtract(first, second));
+                break;
+            case "*" :
+                System.out.println(multi(first, second));
+                break;
+            case "/" :
+                System.out.println(division(first, second));
+        }
+
 
     }
 
-    public static void sum (int a, int b){
-        System.out.print(a + " + " + b + " = ");
-        System.out.println(a + b);
+
+    private static int sum (int a, int b){
+        return a + b;
     }
 
-    public static void sum (char a, char b){
-        System.out.print(a + " + " + b + " = ");
-        System.out.println(a + b);
+    private static char sum (char a, char b){
+        return (char) (a + b);
     }
 
-    public static void sum (double a, double b){
-        System.out.print(a + " + " + b + " = ");
-        System.out.println(a + b);
+    private static double sum (double a, double b){
+        return a + b;
     }
 
-    public static void sum (long a, long b){
-        System.out.print(a + " + " + b + " = ");
-        System.out.println(a + b);
+    private static long sum (long a, long b){
+        return a + b;
     }
 
-    public static void subtract (int a, int b){
-        System.out.print(a + " - " + b + " = ");
-        System.out.println(a - b);
+    private static int subtract (int a, int b){
+        return a - b;
     }
 
-    public static void subtract (char a, char b){
-        System.out.print(a + " - " + b + " = ");
-        System.out.println(a - b);
+    private static char subtract (char a, char b){
+        return (char) (a - b);
     }
 
-    public static void subtract (double a, double b){
-        System.out.print(a + " - " + b + " = ");
-        System.out.println(a - b);
+    private static double subtract (double a, double b){
+        return a - b;
     }
 
-    public static void subtract (long a, long b){
-        System.out.print(a + " - " + b + " = ");
-        System.out.println(a - b);
+    private static long subtract (long a, long b){
+        return a - b;
     }
 
-    public static void multi (int a, int b){
-        System.out.print(a + " * " + b + " = ");
-        System.out.println(a * b);
+    private static int multi (int a, int b){
+        return a * b;
     }
 
-    public static void multi (char a, char b){
-        System.out.print(a + " * " + b + " = ");
-        System.out.println(a * b);
+    private static char multi (char a, char b){
+        return (char) (a * b);
     }
 
-    public static void multi (double a, double b){
-        System.out.print(a + " * " + b + " = ");
-        System.out.println(a * b);
+    private static double multi (double a, double b){
+        return a * b;
     }
 
-    public static void multi (long a, long b){
-        System.out.print(a + " * " + b + " = ");
-        System.out.println(a * b);
+    private static long multi (long a, long b){
+        return a * b;
     }
 
-    public static void division (int a, int b){
-        System.out.print(a + " / " + b + " = ");
-        System.out.println(a / b);
+    private static int division (int a, int b){
+        return a / b;
     }
 
-    public static void division (char a, char b){
-        System.out.print(a + " / " + b + " = ");
-        System.out.println(a / b);
+    private static char division (char a, char b){
+        return (char) (a / b);
     }
 
-    public static void division (double a, double b){
-        System.out.print(a + " / " + b + " = ");
-        System.out.println(a / b);
+    private static double division (double a, double b){
+        return a / b;
     }
 
-    public static void division (long a, long b){
-        System.out.print(a + " / " + b + " = ");
-        System.out.println(a / b);
+    private static long division (long a, long b){
+        return a / b;
     }
 }
